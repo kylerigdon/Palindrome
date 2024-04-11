@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>App Name: A coding challenge</title>
+    <title>Rotator: A coding challenge</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -41,7 +41,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-xxl">
                 <a class="navbar-brand" href="/index.html"> <img src="/img/RobotWhite logo - no background.svg"
-                        height="30" /> App Name</a>
+                        height="30" /> Rotator</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
                     aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -66,10 +66,31 @@
         </nav>
     </header>
     <main class="container-xxl py-3 mt-5">
-        <h1 class="mainText">APP UI GOES HERE</h1>
-        <label>Secret Message</label>
-        <input id="message" type="text" value="HI!" placeholder="Enter a Message" />
-        <button id="btnSubmit" class="btn btn-primary">Display Message</button>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h1 class="mainText border-bottom border-2 border-dark">Rotator: A Coding Challenge</h1>
+                <p class="lead subText">
+                    Rotator takes a word or phrase input by the user and reverses it, then checks to see if it is 
+                    a palindrome. Then displays a message telling you whether the text is or is not a palindrome 
+                    and displays the reversed text.
+                </p>
+            </div>
+            <div class="col-12 col-md-6 mt-2">
+                <h2 class="mainText border-bottom border-2 border-dark">Enter a phrase or word</h2>
+                <form action="#" class="row gx-3 gy-2">
+                    <div class="col">
+                        <input id="inputString" 
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter Text"
+                        aria-label="Enter Text" />
+                    </div>
+                    <div class="col-12">
+                        <button type="button" id="btnSubmit" class="btn btn-primary">Check</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
     <footer class="container-fluid py-3">
         <div class="container-xxl">
@@ -109,7 +130,7 @@
 
     <script>
         let button = document.getElementById('btnSubmit');
-        button.addEventListener('click', displayMessage);
+        button.addEventListener('click', getValues);
     </script>
 
 
