@@ -33,9 +33,9 @@ function checkForPalindrome(inputLower, reversedString){
   let palindrome = '';
 
   if (reversedString == inputLower){
-    palindrome = 'true'
+    palindrome = 'true';
   } else {
-    palindrome = 'false'
+    palindrome = 'false';
   }
 
   return palindrome;
