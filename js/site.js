@@ -1,3 +1,6 @@
+//Get user input 
+//Using Regex convert to lowercase with no spaces or special characters
+//Reverse the string
 function getValues(){
 
   let inputString = document.getElementById('inputString').value;
@@ -23,6 +26,8 @@ function getValues(){
   }
 }
 
+//check if the reversed string is a palindrome by comparing it to the mutated inputString
+//If they are equal then it will return true, if not it will return false
 function checkForPalindrome(inputLower, reversedString){
 
   let palindrome = ''
@@ -36,6 +41,7 @@ function checkForPalindrome(inputLower, reversedString){
   return palindrome;
 }
 
+//Display a message saying whether or not its a palindrome
 function displayResults(checked, reversed){
 
   if (checked == 'true'){
