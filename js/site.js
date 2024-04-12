@@ -29,13 +29,13 @@ function getValues(){
 //check if the reversed string is a palindrome by comparing it to the mutated inputString
 //If they are equal then it will return true, if not it will return false
 function checkForPalindrome(inputLower, reversedString){
-
-  let palindrome = '';
+//Uses a boolean expression for true or false
+  let palindrome;
 
   if (reversedString == inputLower){
-    palindrome = 'true';
+    palindrome = true;
   } else {
-    palindrome = 'false';
+    palindrome = false;
   }
 
   return palindrome;
@@ -44,7 +44,7 @@ function checkForPalindrome(inputLower, reversedString){
 //Display a message saying whether or not its a palindrome
 function displayResults(checked, reversed){
 
-  if (checked == 'true'){
+  if (checked == true){
     Swal.fire({
       icon: "success",
       title: "Well done! You entered a Palindrome!",
