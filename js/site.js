@@ -30,7 +30,7 @@ function getValues(){
 //If they are equal then it will return true, if not it will return false
 function checkForPalindrome(inputLower, reversedString){
 
-  let palindrome = ''
+  let palindrome = '';
 
   if (reversedString == inputLower){
     palindrome = 'true'
