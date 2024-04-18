@@ -61,3 +61,78 @@ function displayResults(checked, reversed){
   }
 
 }
+
+//using object-oriented version
+// function getValues() {
+
+//   document.getElementById('alert').classList.add('invisible');
+//   let inputString = document.getElementById('inputString').value;
+
+//   if (inputString == ''|| inputString == 0){
+//     Swal.fire({
+//              icon: "error",
+//              title: "Oops!",
+//              text: 'Please enter text.',
+//              backdrop: false
+//           });
+//   } else {
+//   let returnObj = checkForPalindrome(inputString);
+//   displayString(returnObj);
+//   }
+// }
+
+// function reverseString(inputString) {
+//   let results = '';
+
+//      for (let i = inputString.length - 1; i >= 0; i--){
+//       results += inputString[i];
+// }
+
+// return results;
+// }
+
+// function checkForPalindrome(inputString) {
+//   userString = inputString.toLowerCase();
+
+//   const regex = /[\W_]/gi;
+//   inputString = inputString.replace(regex, '');
+
+//   let revString = '';
+
+//   // introducing ... the OBJECT!!!
+//   let returnObj = { msg:'', reversed:''};
+
+//   revString =  reverseString(inputString);
+
+//   if(inputString === revString) {
+//     returnObj.msg = 'Well done! You have a palindrome'
+//   } else {
+//     returnObj.msg = 'Sorry! You do not have a palindrome'
+//   }
+
+//   returnObj.reversed = revString;
+
+//   return returnObj;
+// }
+
+// function displayString(returnObj){
+//   let msgAlert = document.getElementById('alert');
+//   let alertHeader = document.getElementById('alertHeader');
+
+//   if(returnObj.msg.includes('Sorry')){
+//     msgAlert.classList.remove('alert-success');
+//     msgAlert.classList.add('alert-danger');
+//   }else {
+//     msgAlert.classList.remove('alert-danger');
+//     msgAlert.classList.add('alert-success');
+//   }
+
+//   alertHeader.innerHTML = returnObj.msg;
+//   document.getElementById('msg').innerHTML = `Your word reversed is: <strong>${returnObj.reversed}</strong>`;
+
+//   msgAlert.classList.remove('invisible');
+// }
+
+// function resetValues(){
+
+// }
